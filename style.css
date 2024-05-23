@@ -1,0 +1,88 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --bg-primary: rgb(106, 133, 252);
+    --bg-secondary: #eaeaea;
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222222;
+    --icon-bg-primary: tomato;
+    --icon-bg-secondary: #777777;
+}
+
+.container {
+    background-color: var(--bg-primary);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--icon-bg-primary);
+}
+
+.description {
+    font-size: 1em;
+    margin-top: 8px;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+}
+
+@media screen and (max-width: 476px) {
+    .card {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 2em;
+    }
+}
